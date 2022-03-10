@@ -13,13 +13,14 @@ function delay(ms: number) {
 async function stampa() {
 
     for (let i = 0; i < cars.length; i++) {
-        console.log(cars[i])
+        console.log(`macchina ${i+1}\n id:${cars[i].id}\n marca:${cars[i].marca}\n modello:${cars[i].modello}\n`)
         await delay(2000);
     }
     console.log("fine popolamento");
 }
 console.log("inizio popolamento");
 stampa();
+
 
 
 
